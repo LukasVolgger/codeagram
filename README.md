@@ -1,4 +1,4 @@
-<h1>Tic Tac Toe</h1>
+<h1>&lt/&gt Codeagram</h1>
 
 This app is a learning project from the Frontend Web Development course of the <a href="https://developerakademie.com/">Developer Akademie</a>. 
 
