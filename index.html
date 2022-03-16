@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt/&gt Codeagram</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./scipts/script.js"></script>
+    <script src="./scipts/templates.js"></script>
+    <!-- Import Google Fonts START -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+    <!-- Import Google Fonts END -->
+</head>
+
+<body onload="render()">
+    <header class="border-spacing">
+        <button class="logo-text btns">&lt/&gt Codeagram</button>
+        <div class="search-bar">
+            <button class="btns" onclick="noFunction()"><img src="img/icons/search.svg" alt="Search"></button>
+            <input type="text" placeholder="Search">
+        </div>
+        <nav class="header-menu">
+            <button class="btns icon-btn" onclick="noFunction()"><img class="icons" src="img/icons/home.svg" alt="Home"></button>
+            <button class="btns icon-btn" onclick="noFunction()"><img class="icons" src="img/icons/paper_plane.svg" alt="Paper Plane"></button>
+            <button class="btns icon-btn" onclick="noFunction()"><img class="icons" src="img/icons/add_plus.svg" alt="Add Post"></button>
+            <button class="btns icon-btn" onclick="noFunction()"><img class="icons" src="img/icons/compass.svg" alt="Compass"></button>
+            <button class="btns icon-btn" onclick="noFunction()"><img class="icons" src="img/icons/heart.svg" alt="Heart"></button>
+            <button class="user-profile-container user-profile-container-header profile-btn hide-mobile" onclick="noFunction()">
+                <img id="current-user-profile-header" class="user-profile-img user-profile-img-header" src="" alt="Current User Profile">
+            </button>
+        </nav>
+    </header>
+    <div class="main-wrapper border-spacing">
+        <div class="main-content">
+            <main>
+                <div class="posts-section">
+                    <div id="profiles-container" class="profiles-container hide-mobile">
+                        <!-- Profiles are rendered here -->
+                    </div>
+                    <div id="posts-container" class="posts-container">
+                        <!-- Posts are rendered here -->
+                    </div>
+                </div>
+            </main>
+            <aside class="hide-mobile-1200">
+                <div class="aside-content">
+                    <div id="current-user-profile" class="current-user-profile">
+                        <!-- Current user profile is rendered here -->
+                    </div>
+                    <div class="suggestions">
+                        <div class="suggestions-header"><b class="suggestions-text">Suggestions for you</b><button class="btns">View all</button></div>
+                        <div id="suggested-profiles-container" class="suggested-profiles-container">
+                            <!-- Suggested profiles are rendered here -->
+                        </div>
+                    </div>
+                    <footer>
+                        <div class="footer-links">
+                            <a href="javascript:;" class="footer-link" onclick="noFunction()">Info</a> .
+                            <a href="javascript:;" class="footer-link" onclick="noFunction()">Help</a> .
+                            <a href="javascript:;" class="footer-link" onclick="noFunction()">Press</a> .
+                            <a href="javascript:;" class="footer-link" onclick="noFunction()">API</a> .
+                            <a href="javascript:;" class="footer-link" onclick="noFunction()">Jobs</a> .
+                            <a href="javascript:;" class="footer-link" onclick="noFunction()">Data Policy</a><br>
+                            <a href="javascript:;" class="footer-link" onclick="noFunction()">Imprint</a> /
+                            <a href="javascript:;" class="footer-link" onclick="noFunction()">Terms of Use</a> /
+                            <a href="javascript:;" class="footer-link" onclick="noFunction()">NetzDG</a> /
+                            <a href="javascript:;" class="footer-link" onclick="noFunction()">UrhDaG</a><br>
+                            <a href="javascript:;" class="footer-link" onclick="noFunction()">Locations</a> .
+                            <a href="javascript:;" class="footer-link" onclick="noFunction()">Top Accounts</a> .
+                            <a href="javascript:;" class="footer-link" onclick="noFunction()">Hashtags</a> .
+                            <a href="javascript:;" class="footer-link" onclick="noFunction()">Language English</a>
+                        </div>
+                        <div class="footer-copyright">
+                            <span>2022 Sample Website</span>
+                            <span>Created by Lukas Volgger</span>
+                        </div>
+                    </footer>
+                </div>
+            </aside>
+        </div>
+    </div>
+</body>
+
+</html>

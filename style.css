@@ -1,0 +1,574 @@
+/* ###################################### GENERAL ###################################### */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(250, 250, 250);
+}
+
+.d-none {
+    display: none !important;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #06a4ff;
+    font-weight: bold;
+	font-size: 1rem;
+}
+
+.profile-btn {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+	cursor: pointer;
+	padding: 0;
+}
+
+.icon-btn:hover {
+	filter: invert(56%) sepia(15%) saturate(6083%) hue-rotate(162deg) brightness(105%) contrast(107%);
+}
+
+.btns:hover {
+    color: rgb(2, 196, 255);
+}
+
+.icons {
+    width: 24px
+}
+
+.border-spacing {
+    padding: 0 164px 0 164px;
+}
+
+.user-profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding: 3px;
+    border-radius: 50%;
+    background-image: linear-gradient(25deg, #ffe055, #f34067);
+}
+
+.user-profile-img {
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 0.1rem solid white;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* ###################################### HEADER ###################################### */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    background-color: white;
+    z-index: 1;
+}
+
+.logo-text {
+    font-family: 'Grand Hotel', cursive;
+    font-weight: bold;
+    font-size: 1.75rem;
+    color: black;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 32px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 4px;
+}
+
+.search-bar img {
+    width: 16px;
+    margin: 0 8px 0 8px;
+}
+
+.search-bar input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+.search-bar input:focus-visible {
+    outline: none;
+}
+
+.search-bar input::placeholder {
+    color: #9b9b9b;
+}
+
+.header-menu {
+    display: flex;
+    gap: 4px;
+}
+
+.user-profile-container-header {
+    padding: 2px;
+}
+
+.user-profile-img-header {
+    width: 24px;
+    height: 24px;
+}
+
+
+/* ###################################### MAIN ###################################### */
+
+.main-wrapper {
+    display: flex;
+	justify-content: space-between;
+    margin-top: 70px !important;
+    gap: 32px;
+}
+
+.main-content {
+	display: flex;
+	gap: 32px;
+}
+
+main {
+    display: flex;
+    width: min-content;
+}
+
+.posts-section {
+    width: 100%;
+}
+
+.profiles-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    white-space: nowrap;
+    gap: 16px;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+.profiles-container::-webkit-scrollbar {
+    height: 8px;
+    width: 2px;
+    background: rgba(215, 215, 215, 0.5);
+}
+
+.profiles-container::-webkit-scrollbar-thumb {
+    height: 8px;
+    width: 2px;
+    background: #dddddd;
+    border-radius: 16px;
+}
+
+/*
+
+.profiles-container::-webkit-scrollbar-button:horizontal:start:decrement {
+    background: linear-gradient(30deg, #ffffff 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(150deg, #ffffff 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(270deg, #ffffff 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #000000;
+}
+
+.profiles-container::-webkit-scrollbar-button:horizontal:end:increment {
+    background: linear-gradient(210deg, #ffffff 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(330deg, #ffffff 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(90deg, #ffffff 30%, rgba(0, 0, 0, 0) 31%);
+    background-color: #000000;
+}
+
+*/
+
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-name-small {
+    font-size: 0.9rem;
+}
+
+.user-profile-img-main {
+    width: 64px;
+    height: 64px;
+}
+
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+	padding-bottom: 16px;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+}
+
+.post-header {
+    display: flex;
+    padding: 8px;
+    position: relative;
+}
+
+.post-menu-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.post-menu-btn img {
+    width: 16px;
+}
+
+.post-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 8px;
+    gap: 4px;
+}
+
+.post-title {
+    font-size: 0.9rem;
+	word-break: break-all;
+}
+
+.post-image {
+    max-width: 100%;
+    height: 500px;
+	object-fit: contain;
+    background-color: black;
+}
+
+.post-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.post-nav-icons-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.post-likes {
+    padding: 8px;
+    font-weight: bold;
+	font-size: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.post-demo-comments {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 8px 0 8px;
+    font-size: 0.8rem;
+	gap: 8px;
+}
+
+.post-comments {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 8px 0 8px;
+    font-size: 0.8rem;
+	gap: 8px;
+}
+
+.post-comment-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	margin-top: 8px;
+    padding: 8px;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.post-comment-input-container {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+.post-comment-input {
+    border: none;
+    width: 100%
+}
+
+.user-comment {
+	word-break: break-all;
+}
+
+
+/* ###################################### ASIDE ###################################### */
+
+aside {
+    position: sticky;
+    top: 76px;
+    height: calc(100vh - 77px);
+}
+
+.aside-content {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.current-user-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    gap: 16px;
+}
+
+.suggestions {
+    margin-bottom: 16px;
+}
+
+.suggestions-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.suggestions-text {
+    color: gray;
+}
+
+.suggested-profiles-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.suggested-profiles-container::-webkit-scrollbar {
+    height: 8px;
+    width: 2px;
+    background: rgba(215, 215, 215, 0.5);
+}
+
+.suggested-profiles-container::-webkit-scrollbar-thumb {
+    height: 8px;
+    width: 2px;
+    background: #9c9c9c;
+    border-radius: 16px;
+}
+
+.suggested-user-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* ###################################### FOOTER ###################################### */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: rgb(200, 200, 200);
+    font-size: 0.8rem;
+    margin-bottom: 16px;
+}
+
+.footer-link {
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+
+/* ###################################### MEDIA ###################################### */
+
+
+/* Extra extra small devices (phones, 360px and down) */
+
+@media only screen and (max-width: 360px) {
+	::placeholder {
+		font-size: 0.8em;
+	}
+	html {
+		font-size: 0.8em;
+	}
+	.hide-mobile,
+	.hide-mobile-1200	{
+		display: none;
+	}
+	.border-spacing {
+		padding: 0 64px 0 64px;
+	}
+	.icons {
+		width: 20px;
+	}
+	header {
+		flex-direction: column;
+		gap: 16px;
+	}
+	.search-bar {
+		width: 40vw;
+	}
+	.main-wrapper {
+		justify-content: center;
+		margin-top: 158px !important;
+	}
+	main {
+		width: 100%;
+	}
+	.user-profile-img {
+		width: 36px;
+		height: 36px;
+	}
+	.post-image {
+		height: 250px;
+	}
+}
+
+
+/* Extra small devices (phones, 360px and up) */
+
+@media only screen and (min-width: 360px) {
+	::placeholder {
+		font-size: 1em;
+	}
+	html {
+		font-size: 1em;
+	}
+	.hide-mobile,
+	.hide-mobile-1200 {
+		display: none;
+	}
+	.border-spacing {
+		padding: 0 64px 0 64px;
+	}
+	.icons {
+		width: 24px;
+	}
+	header {
+		flex-direction: column;
+		gap: 16px;
+	}
+	.search-bar {
+		width: 40vw;
+	}
+	.main-wrapper {
+	    justify-content: center;
+		margin-top: 158px !important;
+	}
+	main {
+		width: 100%;
+	}
+	.user-profile-img {
+		width: 36px;
+		height: 36px;
+	}
+	.post-image {
+		height: 250px;
+	}
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+	.post-image {
+		height: 350px;
+	}
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+	.hide-mobile {
+		display: flex;
+	}
+	header {
+		flex-direction: row;
+		gap: 0;
+	}
+	.search-bar {
+		width: 25vw;
+	}
+	.main-wrapper {
+		margin-top: 76px !important;
+	}
+	main {
+		width: min-content;
+	}
+	.user-profile-img {
+		width: 44px;
+		height: 44px;
+	}
+	.user-profile-img-main {
+		width: 64px;
+		height: 64px;
+	}
+	.post-image {
+		height: 500px;
+	}
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+	.hide-mobile-1200 {
+		display: flex;
+	}
+	.border-spacing {
+		padding: 0 164px 0 164px;
+	}
+}
