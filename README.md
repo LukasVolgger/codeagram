@@ -30,6 +30,9 @@ Here is an overview of the most important functions of the project. Click on the
 <h2 id="preview">Preview</h2>
 
 ![This is an image](/img/preview/main_preview.png)
+
+---
+
 ![This is an image](/img/preview/posts_preview.png)
 
 
