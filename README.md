@@ -65,3 +65,5 @@ Navigate to the location on your computer where you downloaded/cloned the code. 
 ![readme_installation_2](https://user-images.githubusercontent.com/55922592/161733187-a9ca556c-d21e-4f74-b96d-015082da85d5.png)
 
 <h2 id="license">License</h2>
+
+<a href="https://github.com/LukasVolgger/codeagram/blob/main/LICENSE">![APM](https://img.shields.io/apm/l/vim-mode?label=License&style=for-the-badge)</a>
